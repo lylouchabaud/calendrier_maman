@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendrier de l'Avent - Pour Maman ❤️</title>
+
+  <!-- Icône de l'application pour l'écran d'accueil (iOS et Android) -->
+  <link rel="apple-touch-icon" href="https://i.postimg.cc/8Wk21p5F/noel-icon.png">
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/8Wk21p5F/noel-icon.png">
+
+  <!-- Configuration pour PWA -->
+  <link rel="manifest" href='data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22Le%20calendrier%20de%20Maman%22%2C%22short_name%22%3A%22Calendrier%20Maman%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23071426%22%2C%22theme_color%22%3A%22%23071426%22%7D'>
+  <meta name="theme-color" content="#071426">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Calendrier Maman">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-decoration"></div>
+      <p class="eyebrow">UNE PETITE SURPRISE POUR TOI</p>
+      <h1>Pour maman <span>♥</span></h1>
+      <p class="intro">
+        24 jours de surprises, de souvenirs et d'amour.
+      </p>
+
+      <form id="login-form">
+        <label for="password">Ton mot de passe</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Entre le mot de passe"
+          autocomplete="current-password"
+          required
+        >
+        <button type="submit">Ouvrir mon calendrier ✨</button>
+        <p id="login-error" class="error" role="alert"></p>
+      </form>
+
+      <p class="little-note">Un petit cadeau préparé avec amour ❤️</p>
+    </div>
+  </div>
+
+  <main id="site" class="site hidden">
+    <header class="hero">
+      <p class="eyebrow">DU 1ER AU 24 DÉCEMBRE</p>
+      <h1>Le calendrier de <span>maman</span> ♥</h1>
+      <p class="hero-text">
+        Chaque jour cache une petite surprise. Ouvre les cases au fil de décembre !
+      </p>
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>La magie de Noël</span>
+          <span id="progress-text">0 / 24 cases</span>
+        </div>
+        <div class="progress-track">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="calendar-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TON PETIT RENDEZ-VOUS</p>
+          <h2>Les 24 surprises</h2>
+        </div>
+        <div class="legend"><span>✦</span> Une surprise par jour</div>
+      </div>
+      <div id="calendar-grid" class="calendar-grid"></div>
+      <p class="calendar-note">
+        🔒 Les cases à venir restent fermées. Tu peux revoir les surprises déjà ouvertes.
+      </p>
+    </section>
+
+    <!-- BOUTON ET MENU SECRET LYLOU -->
+    <div class="secret-admin-container">
+      <button id="toggle-admin-btn" class="secondary-button" type="button">✨ Mode Secret (Lylou)</button>
+      
+      <div id="admin-panel" class="admin-panel hidden">
+        <p class="eyebrow">ESPACE SECRET</p>
+        <h3>Gestion du calendrier</h3>
+        <form id="admin-form">
+          <input 
+            id="admin-password" 
+            type="password" 
+            placeholder="Mot de passe (lylou)" 
+            required
+          >
+          <button type="submit">Valider</button>
+        </form>
+        <div id="admin-actions" class="hidden">
+          <p class="success-msg">Accès autorisé ! ✨</p>
+          <button id="unlock-all-btn" class="secondary-button" type="button">🔓 Tout débloquer d'un coup</button>
+          <button id="lock-all-btn" class="secondary-button" type="button" style="background: #193452; color: white;">🔒 Tout bloquer (Mode normal)</button>
+          <button id="reset-progress-btn" class="secondary-button" type="button" style="background: #c94b55; color: white;">🔄 Réinitialiser les ouvertures</button>
+        </div>
+        <p id="admin-error" class="error"></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Joyeux Noël, maman <span>♥</span></p>
+      <p>Fait avec amour, rien que pour toi.</p>
+    </footer>
+  </main>
+
+  <div id="surprise-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-card">
+      <button id="close-modal" class="close-modal" type="button" aria-label="Fermer">×</button>
+      <div id="modal-icon" class="modal-icon">🎁</div>
+      <p id="modal-day" class="eyebrow">SURPRISE DU JOUR</p>
+      <h2 id="modal-title">Une surprise pour toi</h2>
+      <div id="modal-content" class="modal-content"></div>
+      <p class="modal-signature">Je t'aime maman ❤️</p>
+      <button id="modal-ok" class="secondary-button" type="button">
+        C'est adorable ♥
+      </button>
+    </div>
+  </div>
+
+  <div id="effects" aria-hidden="true"></div>
+  <div id="snow" aria-hidden="true"></div>
+
+</body>
+</html>
