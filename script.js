@@ -9,11 +9,11 @@ const surprises = {
   1: {
     icon: "💌",
     title: "Un cadeau juste pour toi",
-    content: "Maman, bienvenue dans ton calendrier ! Pour te montrer que tu es la meilleure maman du monde, je t'ai fait un calendrier personnalisé juste pour toi. Du 2 au 24 décembre, tu auras chaque jour une petite surprise spécialement pour toi. J'espère qu'il va te plaire. Bon mois de décembre ! ❤️"
+    content: "Maman, bienvenue dans ton calendrier ! Pour te montrer que tu es la meilleure maman du monde, je t'ai fait un calendrier personnalisé juste pour toi. Du coup 2 au 24 décembre, tu auras chaque jour une petite surprise spécialement pour toi. J'espère qu'il va te plaire. Bon mois de décembre ! ❤️"
   },
   2: {
     icon: "📸",
-    title: "Souvenirs en duo n°1",
+    title: "Souvenirs n°1",
     content: "Deux petites photos qui remontent au 31 décembre 2016 ! Bonne journée, je t'aime ❤️ (Clique sur une photo pour l'agrandir !)\n\n" +
              "<div style='display: flex; gap: 12px; justify-content: center; margin-top: 15px; flex-wrap: wrap;'>" +
              "<img src='https://i.postimg.cc/G29VHsjt/IMG-7328.jpg' class='zoomable-photo' style='width: 45%; max-width: 150px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 1px solid #f4c96b44; cursor: pointer;' alt='Photo 1'>" +
@@ -38,13 +38,13 @@ const surprises = {
   },
   6: {
     icon: "😂",
-    title: "Le souvenir drôle",
+    title: "Un souvenir drôle",
     content: "Je pense qu'un souvenir que l'on n'oubliera jamais est celui du café d'Espagne quand on est partis tous les 4 en 2025. Le moment où tu as pris les commandes avec la serveuse... Je n'ai jamais autant ri de ma vie ! 😂😂😂😂"
   },
   7: {
     icon: "💖",
     title: "Un doux message",
-    content: "Maman, je voulais juste te rappeler que tu es la meilleure ! Sans toi je n'aurais pas mon pancake du matin, mes vêtements resteraient dans la salle de bain et ne seraient pas repassés... Bref, t'es la meilleure maman du monde ! ❤️"
+    content: "Maman, je voulais juste te rappeler que tu es la meilleure ! Sans toi je n'aurais pas mon pancake du matin, mes vêtements resteraient dans la salle de bain chaque soir et ne seraient pas repassés... Bref, t'es la meilleure maman du monde ! ❤️"
   },
   8: {
     icon: "✨",
@@ -53,7 +53,7 @@ const surprises = {
   },
   9: {
     icon: "📸",
-    title: "Souvenirs en duo n°2",
+    title: "Souvenirs n°2",
     content: "Des petites photos de nous 4 qui remontent au 2 avril 2015 ! Bonne journée, je t'aime ❤️ (Clique sur une photo pour l'agrandir !)\n\n" +
              "<div style='display: flex; gap: 12px; justify-content: center; margin-top: 15px; flex-wrap: wrap;'>" +
              "<img src='https://i.postimg.cc/RZMPWHS4/IMG-1605.jpg' class='zoomable-photo' style='width: 45%; max-width: 150px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 1px solid #f4c96b44; cursor: pointer;' alt='Photo 1'>" +
@@ -86,7 +86,7 @@ const surprises = {
   },
   14: {
     icon: "📸",
-    title: "Souvenirs en duo n°3",
+    title: "Souvenirs n°3",
     content: "Des petites photos qui remontent à septembre 2018 ! Bonne journée, je t'aime ❤️ (Clique sur une photo pour l'agrandir !)\n\n" +
              "<div style='display: flex; gap: 12px; justify-content: center; margin-top: 15px; flex-wrap: wrap;'>" +
              "<img src='https://i.postimg.cc/W47TMrrH/IMG-3075.jpg' class='zoomable-photo' style='width: 45%; max-width: 150px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 1px solid #f4c96b44; cursor: pointer;' alt='Photo 1'>" +
@@ -118,7 +118,7 @@ const surprises = {
   },
   19: {
     icon: "📸",
-    title: "Souvenirs en duo n°4",
+    title: "Souvenirs n°4",
     content: "Un petit souvenir qui vient du 12 février 2015 au Portugal ! Bonne journée, je t'aime ❤️ (Clique sur une photo pour l'agrandir !)\n\n" +
              "<div style='display: flex; gap: 12px; justify-content: center; margin-top: 15px; flex-wrap: wrap;'>" +
              "<img src='https://i.postimg.cc/BZjtGY2J/IMG-1060.jpg' class='zoomable-photo' style='width: 45%; max-width: 150px; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 1px solid #f4c96b44; cursor: pointer;' alt='Photo 1'>" +
